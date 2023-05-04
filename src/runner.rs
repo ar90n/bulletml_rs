@@ -21,6 +21,7 @@ type Parameters = Vec<f64>;
 /// [Runner::init_from_state](struct.Runner.html#method.init_from_state) when creating new bullets.
 ///
 /// See also [AppRunner::create_bullet](trait.AppRunner.html#tymethod.create_bullet).
+#[derive(Debug, Clone)]
 pub struct State {
     bml_type: Option<BulletMLType>,
     nodes: Box<[NodeId]>,
